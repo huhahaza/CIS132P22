@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Creat Account</title>
+    <title>Create Account</title>
     <link rel="stylesheet" href="styles.css" />
 </head>
 <body class="signup-page">
@@ -18,7 +18,7 @@
             <li><a href="contact.html">Contact</a></li>
             <li><a href="signup.html">Sign Up</a></li>
         </ul>
-       </nav>
+    </nav>
 </header>
 
 <main>
@@ -40,7 +40,7 @@
 
             <div class="field">
                 <label for="email">Email</label>
-                <input id="email" name="email" type="email" placeholder="example@FreshMarket.com" required>
+                <input id="email" name="email" type="email" placeholder="example@freshmarket.com" required>
             </div>
 
             <div class="field">
@@ -57,22 +57,22 @@
                 <label for="phone">Phone number</label>
                 <div class="input-combo">
                     <input id="phone" name="phone" type="tel" placeholder="000-000-0000">
-                    <select name="country">
+                    <select id="country" name="country">
                         <option value="us" selected>US</option>
                         <option value="kr">KR</option>
                         <option value="jp">JP</option>
                     </select>
                 </div>
-            </div><br>
+            </div>
 
             <label class="checkbox-field">
                 <input type="checkbox" name="offers" checked>
                 <span>Yes! Sign me up to receive emails from FreshMarket with the latest deals, sales, and updates.</span>
-            </label><br>
+            </label>
 
             <p class="form-disclaimer">
-                By clicking ‘Sign up’ button, you agree to our Terms Of Service and Privacy Policy.
-            </p><br>
+                By clicking 'Sign up' you agree to our Terms of Service and Privacy Policy.
+            </p>
 
             <div class="form-actions">
                 <button type="submit" class="btn-green">Sign up</button>
@@ -81,7 +81,6 @@
         </form>
     </section>
 </main>
-
 
 <footer>
     <p>&copy; <span id="year"></span> FreshMarket. All rights reserved.</p>
