@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Creat Account</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="signup-page">
+<header>
+    <h1>Fresh<span>Market</span></h1>
+    <nav aria-label="Primary">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="product.html">Products</a></li>
+            <li><a href="orders.html">Orders</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="signup.html">Sign Up</a></li>
+        </ul>
+       </nav>
+</header>
+
+<main>
+    <section class="account-form">
+        <h1>Sign Up</h1>
+        <p class="account-tagline">Create your FreshMarket account in just a few steps.</p>
+
+        <form action="#" method="post" novalidate>
+            <div class="field-row two-col">
+                <div class="field">
+                    <label for="first-name">First name</label>
+                    <input id="first-name" name="first_name" type="text" placeholder="Steve" required>
+                </div>
+                <div class="field">
+                    <label for="last-name">Last name</label>
+                    <input id="last-name" name="last_name" type="text" placeholder="Jobs" required>
+                </div>
+            </div>
+
+            <div class="field">
+                <label for="email">Email</label>
+                <input id="email" name="email" type="email" placeholder="example@FreshMarket.com" required>
+            </div>
+
+            <div class="field">
+                <label for="password">Password</label>
+                <input id="password" name="password" type="password" placeholder="Password" required>
+            </div>
+
+            <div class="field">
+                <label for="confirm-password">Confirm password</label>
+                <input id="confirm-password" name="confirm_password" type="password" placeholder="Confirm password" required>
+            </div>
+
+            <div class="field">
+                <label for="phone">Phone number</label>
+                <div class="input-combo">
+                    <input id="phone" name="phone" type="tel" placeholder="000-000-0000">
+                    <select name="country">
+                        <option value="us" selected>US</option>
+                        <option value="kr">KR</option>
+                        <option value="jp">JP</option>
+                    </select>
+                </div>
+            </div><br>
+
+            <label class="checkbox-field">
+                <input type="checkbox" name="offers" checked>
+                <span>Yes! Sign me up to receive emails from FreshMarket with the latest deals, sales, and updates.</span>
+            </label><br>
+
+            <p class="form-disclaimer">
+                By clicking ‘Sign up’ button, you agree to our Terms Of Service and Privacy Policy.
+            </p><br>
+
+            <div class="form-actions">
+                <button type="submit" class="btn-green">Sign up</button>
+                <button type="reset" class="btn-green">Reset</button>
+            </div>
+        </form>
+    </section>
+</main>
+
+
+<footer>
+    <p>&copy; <span id="year"></span> FreshMarket. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
